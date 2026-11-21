@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "id": "ba5abaee-d90f-421d-b9e3-0e30d9f3ac06",
+      "name": "gavinsu",
+      "email": "gavindu.svp@primeone.global",
+      "passwordHash": "$2a$10$jEvP9axQ3KXEU/.njdMBMebn4W02kMYZPIueNmITDFl68wFc.ZoyG",
+      "verified": true,
+      "createdAt": "2026-11-21T07:16:15.044Z",
+      "webauthnCredentials": [],
+      "currentChallenge": "ekj-PMj9K-G2i4sOvvHqn-SwYYkVnZ6qhxsQCmwPq1o"
+    },
+    {
+      "id": "37b83aff-fc91-497c-842d-6fd72cef858c",
+      "name": "Gavindu Samarakoon",
+      "email": "gavindu.info@gmail.com",
+      "passwordHash": "$2a$10$Y55Bh.Iw376k07TNh3WSL.rixjA1gj.D6NSH99LD2Rw2EvT4rPwte",
+      "verified": true,
+      "createdAt": "2026-11-21T11:21:47.083Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "70c7a7c8-3ab4-413a-a0b5-947bba20422a",
+      "userId": "ba5abaee-d90f-421d-b9e3-0e30d9f3ac06",
+      "title": "web app",
+      "description": "morning",
+      "date": "2026-11-21",
+      "time": "13:24",
+      "important": true,
+      "completed": false,
+      "createdAt": "2026-11-21T07:54:31.071Z"
+    },
+    {
+      "id": "c92badbc-4f3d-4afa-b08a-0b2a6fa39a5b",
+      "userId": "37b83aff-fc91-497c-842d-6fd72cef858c",
+      "title": "abc",
+      "description": "abc",
+      "date": "2026-11-21",
+      "time": "18:34",
+      "important": false,
+      "completed": false,
+      "createdAt": "2026-11-21T12:03:20.325Z"
+    },
+    {
+      "id": "3c2e5abb-af52-4e0f-98da-b79515ac3a09",
+      "userId": "37b83aff-fc91-497c-842d-6fd72cef858c",
+      "title": "av",
+      "description": "dv",
+      "date": "2026-11-21",
+      "time": "17:47",
+      "important": false,
+      "completed": false,
+      "createdAt": "2026-11-21T12:16:01.563Z"
+    }
+  ]
+}
