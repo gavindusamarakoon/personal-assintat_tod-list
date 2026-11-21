@@ -52,6 +52,21 @@
       "important": false,
       "completed": false,
       "createdAt": "2026-11-21T12:16:01.563Z"
+    },
+    {
+      "id": "1b780e32-5345-427b-87a5-e02a4750e614",
+      "userId": "37b83aff-fc91-497c-842d-6fd72cef858c",
+      "title": "ad",
+      "description": "afgf",
+      "category": "personal",
+      "date": "2026-11-21",
+      "time": "09:00",
+      "important": false,
+      "remind": false,
+      "completed": false,
+      "supervisorConfirmed": false,
+      "supervisorConfirmedAt": null,
+      "createdAt": "2026-11-21T12:44:51.966Z"
     }
   ]
 }
