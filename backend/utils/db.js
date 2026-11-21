@@ -1,17 +1,22 @@
-// Very small JSON-file "database" so the project runs instantly with zero setup.
-// Swap this out for Postgres/MongoDB/etc. later — every route only calls the
-// functions below, so that's the only file you'd need to change.
-
 const fs = require("fs");
 const path = require("path");
 
-const DB_PATH = path.join(__dirname, "..", "db.json");
+const DB_PATH = process.env.VERCEL
+  ? "/tmp/db.json"
+  : path.join(__dirname, "..", "db.json");
+
+const DEFAULT_DB = { users: [], tasks: [], notifications: [] };
 
 function readDB() {
   if (!fs.existsSync(DB_PATH)) {
-    writeDB({ users: [], tasks: [] });
+    fs.writeFileSync(DB_PATH, JSON.stringify(DEFAULT_DB, null, 2));
+    return { ...DEFAULT_DB };
   }
-  return JSON.parse(fs.readFileSync(DB_PATH, "utf-8"));
+  try {
+    return JSON.parse(fs.readFileSync(DB_PATH, "utf-8"));
+  } catch {
+    return { ...DEFAULT_DB };
+  }
 }
 
 function writeDB(data) {

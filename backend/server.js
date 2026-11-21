@@ -17,6 +17,11 @@ app.use("/api/tasks", taskRoutes);
 app.use("/api/webauthn", webauthnRoutes);
 
 const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-  console.log(`To-Do backend running on http://localhost:${PORT}`);
-});
+
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`To-Do backend running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
